@@ -31,12 +31,6 @@ if __name__ == "__main__":
     sort = True if args.sort != None else False
     output = None if args.output == None else str((args.output)[0])
 
-    print(files)
-    print(directory)
-    print(sort)
-    print(output)
-
-
     if directory != None:
         if not os.path.exists(directory):
             raise Exception(f"Directory {directory} does not exist.")
