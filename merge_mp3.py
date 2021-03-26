@@ -17,7 +17,8 @@ merges all mp3 files in the current directory.
 parser = argparse.ArgumentParser(prog=os.path.basename(__file__), description=description)
 
 parser.add_argument("--files", "-f", nargs="+", help="The files to be merged (Merged in the order of input).")
-parser.add_argument("--dir", "-d", nargs=1, help="The directory that contains the files to be merged.")
+parser.add_argument("--dir", "-d", nargs=1, help="The directory that contains the files to be merged \
+                                                 (Instead of specifying individual files).")
 parser.add_argument("--sort", "-s", nargs="*", help="Sort input files before merge.")
 parser.add_argument("--output", "-o", nargs=1, help="Output path for the merged mp3 file.")
 
